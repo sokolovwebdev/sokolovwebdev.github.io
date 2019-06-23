@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i|Oranienbaum&display=swap&subset=cyrillic-ext");
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+span {
+  color: #2f2f2f;
+}
+
+.bold {
+  font-weight: 500;
+  color: #404040;
+}
+
+.light {
+  letter-spacing: 0.4px;
+  color: #909090;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.main {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  background-image: url("../img/anna-bg.png"), url("../img/main-bg.jpg");
+  background-position: 77% 0, 0 0;
+  background-repeat: no-repeat;
+  font-family: 'Gotham Pro';
+}
+
+.main .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.main .header-top-logo {
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 19px;
+  margin-right: 25px;
+}
+
+.main .header-top-logo .light {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.main .header-top-address {
+  font-size: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main .header-top-address .bold {
+  margin-bottom: 4px;
+}
+
+.main .header-top-tell {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main .header-top-tell div {
+  margin-left: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main .header-top-tell div .light {
+  font-size: 16px;
+}
+
+.main .header-top-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #070707;
+  text-shadow: 0 2px 0 #ffffff;
+  text-transform: uppercase;
+  width: 231px;
+  height: 65px;
+  -webkit-box-shadow: 0 4px 0 #c6c6c6, 0 11px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 0 #c6c6c6, 0 11px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 35px;
+  background-color: #4e4e4e;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c8c8c8), to(#fafafa));
+  background-image: linear-gradient(to top, #c8c8c8 0%, #fafafa 100%);
+  padding-top: 3px;
+}
+
+.main .header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .header-bottom-item {
+  margin-right: 45px;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.main .main-body {
+  margin-top: 85px;
+  margin-bottom: 105px;
+}
+
+.main .main-body-title {
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #3b3b3b;
+  font-size: 57px;
+}
+
+.main .main-body-title .light {
+  font-style: italic;
+}
+
+.main .main-body-subtitle:after {
+  content: url("../img/main-line.png");
+  position: absolute;
+  bottom: -40px;
+  left: 250px;
+}
+
+.main .main-body-subtitle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main .main-body-subtitle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 299px;
+  height: 80px;
+  -webkit-box-shadow: 0 5px 0 #2b8252, inset 0 -3px 4px rgba(52, 255, 231, 0.18);
+  box-shadow: 0 5px 0 #2b8252, inset 0 -3px 4px rgba(52, 255, 231, 0.18);
+  border-radius: 43px;
+  background-color: #2b8252;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3ba960), to(#87cc62));
+  background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 0 #989898;
+  text-transform: uppercase;
+  margin-right: 29px;
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+.main .main-body-subtitle-descr {
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #454545;
+  font-size: 17px;
+}
+
+.main .main-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main .main-cards-item {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 130px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 19px;
+  -webkit-box-shadow: inset 0 3px 0 #ffffff;
+  box-shadow: inset 0 3px 0 #ffffff;
+}
+
+.main .main-cards-item .card-title {
+  font-size: 21px;
+  color: #484848;
+  letter-spacing: 1.05px;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.main .main-cards-item .card-text {
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #2f2f2f;
+  font-size: 18px;
+}
+
+.main .main-cards-item .card-text2 {
+  font-size: 18px;
+  color: #2f2f2f;
+}
+
+.main .main-cards-item:hover {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+
+.main .main-cards-item:hover .card-title {
+  color: #6cbf61;
+}
