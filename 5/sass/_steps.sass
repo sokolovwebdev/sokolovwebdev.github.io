@@ -1,0 +1,95 @@
+.steps
+  padding-bottom: 130px
+  &-title
+    display: flex
+    margin-bottom: 55px
+    justify-content: space-between
+    &-left
+      font-family: 'Merriweather', serif
+      color: #3b3b3b
+      font-size: 40px
+      letter-spacing: 2.49px
+      display: flex
+      flex-direction: column
+      .light
+        align-self: flex-end
+        margin-top: 31px
+        font-size: 35px
+        color: #7f7f7f
+        text-shadow: -1px 3px 0 #ffffff
+        font-style: italic
+        position: relative
+        z-index: 4
+      .light::after
+        z-index: -1
+        left: -15px
+        top: -14px
+        position: absolute
+        content: url(../img/steps-title-left.png)
+
+    &-right
+      margin-top: 18px
+      font-weight: 400
+      font-size: 22px
+      color: #5e5e5e
+  &-body
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-item1::after
+      position: absolute
+      content: url(../img/steps-line1.png)
+      bottom: -10px
+      right: -10px
+    &-item2::after
+      position: absolute
+      content: url(../img/steps-line2.png)
+      bottom: -25px
+      right: 5px
+    &-item3::after
+      position: absolute
+      content: url(../img/steps-line3.png)
+      bottom: -10px
+      right: -20px
+    &-item
+      position: relative
+      display: flex
+      margin-bottom: 48px
+      transition: 0.4s
+      &-img
+        margin-right: 28px
+      &-text
+        margin-top: 35px
+        width: 170px
+        display: flex
+        flex-direction: column
+        h4
+          transition: 0.4s
+          font-style: italic
+          font-family: 'Merriweather', serif
+          color: #070707
+          padding-top: 8px
+          font-size: 19px
+          text-shadow: 0 1px 0 #ffffff
+          text-align: center
+          margin-bottom: 17px
+          width: 84px
+          font-weight: 400
+          height: 39px
+          background-color: #f8f8f8
+          background-image: linear-gradient(to top, #c8c8c8 0%, #fafafa 100%)
+        b
+          transition: 0.4s
+          font-size: 19px
+          color: #5e5e5e
+        span
+          margin-top: 5px
+          font-size: 19px
+          color: #5e5e5e
+          font-weight: 400
+    &-item:hover h4
+      transition: 0.4s
+      color: #fff
+      background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%)
+    &-item:hover b
+      color: #6cbf61

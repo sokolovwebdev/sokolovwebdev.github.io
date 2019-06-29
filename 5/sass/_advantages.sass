@@ -1,0 +1,40 @@
+.advantages
+  background-image: url(../img/advantages-bg.jpg)
+  background-repeat: no-repeat
+  padding-bottom: 90px
+  background-position: 53% 0
+  &-title
+    font-family: 'Merriweather'
+    margin-bottom: 55px
+    display: flex
+    flex-direction: column
+    font-weight: 400
+    font-size: 50px
+    color: #3b3b3b
+    letter-spacing: 3.11px
+    .light
+      color: #919191
+      font-style: italic
+  &-cards
+    display: flex
+    justify-content: space-between
+    &-item
+      width: 345px
+      height: 419px
+      box-shadow: inset 0 1px 0 #ffffff
+      border-radius: 19px
+      background-color: #f6f6f6
+      padding: 40px 40px 40px 70px
+      .card-row
+        display: flex
+        flex-direction: column
+        &-title::after
+          content: url(../img/advantages-icon.png)
+          position: absolute
+          left: -49px
+          top: 2px
+        &-title
+          position: relative
+          margin-bottom: 10px
+        &-text
+          margin-bottom: 35px

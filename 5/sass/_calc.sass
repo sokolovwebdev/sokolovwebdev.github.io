@@ -1,0 +1,151 @@
+.calc
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 90px 0 90px 0
+  &-title
+    font-family: 'Merriweather', serif
+    font-weight: 400
+    font-size: 50px
+    margin-bottom: 20px
+    color: #3b3b3b
+    .light
+      font-style: italic
+  &-subtitle
+    font-weight: 400
+    font-size: 25px
+    margin-bottom: 49px
+    color: #5e5e5e
+  &-calculator
+    width: 1005px
+    box-shadow: inset 0 3px 0 #ffffff
+    border-radius: 19px
+    background-color: #f9f9f9
+    padding: 40px 40px 50px 40px
+    .calculator-top
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-bottom: 60px
+      &-item
+        &-title
+          font-size: 18px
+          color: #474747
+          letter-spacing: 0.28px
+          margin-bottom: 15px
+        &-input
+          position: relative
+          &-number
+          &-range
+            position: absolute
+            bottom: 0px
+            left: 2px
+            width: 288px !important
+            z-index: 3
+            padding: 0 !important
+            appearance: none
+            background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%)
+            background-color: #e8e8e8
+            border-radius: 1px
+            box-shadow: inset 0 -3px 4px rgba(52, 255, 231, 0.18)
+            height: 7px !important
+          &-range::-webkit-slider-thumb
+            appearance: none
+            width: 16px
+            height: 16px
+            background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%)
+            background-color: #ffffff
+            border: 2px solid #e8e8e8
+            box-shadow: inset 0 -3px 4px rgba(52, 255, 231, 0.18)
+            border-radius: 50%
+
+          input,
+            outline: none
+            margin: 0
+            padding: 0
+            height: 71px
+            width: 292px
+            border-radius: 2px
+            border: 2px solid #f6f6f6
+            background-color: #ffffff
+            font-family: "Gotham Pro"
+            font-size: 19px
+            color: #acacac
+            padding-left: 25px
+          input::placeholder
+            color: #acacac
+
+    .calculator-text
+      font-size: 22px
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      line-height: 30px
+      margin-bottom: 30px
+      .bold
+        transform: translateX(-5px)
+      .green
+        color: #82c679
+        font-family: 'Merriweather', serif
+        font-weight: 400
+        font-style: italic
+        text-decoration: underline
+        margin-left: 4px
+        letter-spacing: 1px
+    .calculator-bottom
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      &-input
+        position: relative
+        width: 290px
+        height: 72px
+        border-radius: 10px
+        border: 1px solid #f6f6f6
+        background-color: #ffffff
+        height: 71px
+        font-size: 19px
+        color: #acacac
+        padding-left: 25px
+      &-input::placeholder
+        color: #acacac
+      &-button
+        cursor: pointer
+        border: none
+        width: 279px
+        height: 77px
+        box-shadow: 0 15px 8px rgba(62, 170, 96, 0.19), 0 5px 0 #2b8252, inset 0 -3px 4px rgba(52, 255, 231, 0.18)
+        border-radius: 40px
+        background-color: #2b8252
+        background-image: linear-gradient(to top, #3ba960 0%, #87cc62 100%)
+        font-weight: 400
+        font-size: 16px
+        text-transform: uppercase
+        color: #ffffff
+        text-shadow: 0 2px 0 #989898
+        padding-top: 2px
+    .calculator-cond
+      color: #828282
+      font-size: 14px
+      font-weight: 400
+      line-height: 19.11px
+      text-decoration: underline
+      display: flex
+      justify-content: flex-end
+      text-align: center
+      margin-top: 28px
+      margin-right: 24px
+.calculator-bottom-input1, .calculator-bottom-input2
+  position: relative
+.calculator-bottom-input1::after
+  content: url(../img/form-name.png)
+  position: absolute
+  right: 18px
+  top: 19px
+.calculator-bottom-input2::after
+  content: url(../img/form-tell.png)
+  position: absolute
+  right: 18px
+  top: 19px
